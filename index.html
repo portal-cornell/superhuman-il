@@ -1,0 +1,126 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./resources/style.css" media="screen"/>
+
+<html lang="en">
+<head>
+  	<title>Demo2Code</title>
+      <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
+          if you update and want to force Facebook to re-scrape. -->
+  	<meta property="og:image" content="./resources/overview.png"/>
+  	<meta property="og:title" content="Superhuman IL" />
+  	<meta property="og:description" content="Superhuman Imitation Learning from Heterogeneous Demonstrations" />
+    <!-- Twitter automatically scrapes this. Go to https://cards-dev.twitter.com/validator?
+        if you update and want to force Twitter to re-scrape. -->
+    <meta property="twitter:card"          content="summary" />
+    <meta property="twitter:title"         content="Superhuman IL" />
+    <meta property="twitter:description"   content="Superhuman Imitation Learning from Heterogeneous Demonstrations" />
+    <meta property="twitter:image"         content="./resources/overview.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<div class="container"> 
+    <div class="logo-container">
+        <div class="left-logo">
+            <a href="https://portal.cs.cornell.edu/"><img id="left-logo" src="./resources/uic.png" alt="UIC Logo"/></a>
+        </div>
+        <div class="right-logo">
+            <a href="https://example.com/"><img id="right-logo" src="./resources/cornell_portal.png" alt="Another Logo"/></a>
+        </div>
+    </div>
+    <div class="title">
+        Superhuman Imitation Learning from Heterogeneous Demonstrations
+    </div>
+
+    <div class="venue">
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2312955&HistoricalAwards=false">NSF #2312955</a>, 
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2312956&HistoricalAwards=false">NSF #2312956</a>
+    </div>
+
+
+    <br><br>
+
+    <div class="author">
+        <a href="https://cs.uic.edu/profiles/brian-ziebart/">Brian Ziebart</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="https://www.cs.uic.edu/~zhangx/">Xinhua Zhang</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="https://www.sanjibanchoudhury.com/">Sanjiban Choudhury</a><sup>2</sup>
+    </div>
+
+    <br><br>
+    <div class="affiliation"><sup>1&nbsp;</sup>University of Illinois at Chicago</div>
+    <div class="affiliation"><sup>2&nbsp;</sup>Cornell University</div>
+    <!-- <div class="affiliation"><sup>2&nbsp;</sup>Affiliation Number Two</div>
+    <div class="affiliation"><sup>3&nbsp;</sup>Affiliation Number Three</div>
+    <div class="affiliation"><sup>4&nbsp;</sup>Affiliation Number Four</div> -->
+
+    <br><br>
+
+
+    <br><br>
+
+    <img style="width: 80%;" src="./resources/overview.png" alt="Overview."/>
+    <br><br>
+    <p style="width:80%;">
+        <center>
+            Existing inverse reinforcement learning struggle to explain low quality demonstrations (gray points) that are unambiguously worse than high quality demonstrations.
+            Our approach, based on Pareto dominance (red point and dashed lines), easily learn from such demonstrations.
+        </center>
+    </p>
+
+    <br><br>
+    <hr>
+
+    <h1>Abstract</h1>
+    <p style="width: 80%;">
+        Learning from demonstrated behavior (i.e., imitation) is an effective means of knowledge transfer in animals and humans. Existing imitation learning methods for artificial intelligence (AI) systems typically assume the capabilities of the imitator match those of the demonstrator. This can lead to undesirable behavior when the imitator?s capabilities significantly exceed those of the demonstrator. This project reformulates imitation learning for AI systems that are more capable than (human) demonstrators in some aspects by seeking to make the AI system unambiguously better than human demonstrators. The project will train graduate students and undergraduates to develop artificial intelligence systems that are better aligned with safety and utility requirements in a broad range of highly impactful future applications.
+
+        The project approaches its reformulated imitation learning objective using a maximum margin optimization for guiding (deep) reinforcement learning of control/decision policies. It focuses on learning from heterogeneous demonstrations and tasks that differ in quality, difficulty, and structure. Initially, multiple metrics for assessing and comparing different behaviors are assumed to be available. Later in the project, these metrics will be learned from demonstrations and supplemental annotations using deep representation learning methods. The policies produced by the approach of this project will be evaluated on a diverse set of applications: open source simulators (e.g., Atari games), manipulation and mobility tasks for robotics platforms, and cancer treatment decisions.
+        
+        This award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.
+    </p>
+
+    <br><br>
+    <hr>
+
+    <h1>Papers</h1>
+    <div class="paper-thumbnail">
+        <a href="https://arxiv.org/abs/2305.16744">
+            <img class="layered-paper-big" width="100%" src="./resources/ziebart22a.png" alt="Paper thumbnail"/>
+        </a>
+    </div>
+    <div class="paper-info">
+        <a href="https://arxiv.org/abs/2305.16744"><h3>Towards Uniformly Superhuman Autonomy via Subdominance Minimization</h3></a>
+        <p>Brian Ziebart, Sanjiban Choudhury, Xinyan Yan, Paul Vernaza</p>
+        <!-- <p>Under review (2023)</p> -->
+        <pre><code>@inproceedings{pmlr-v162-ziebart22a,
+title = {Towards Uniformly Superhuman Autonomy via Subdominance Minimization},
+author = {Ziebart, Brian and Choudhury, Sanjiban and Yan, Xinyan and Vernaza, Paul},
+booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+year = {2022},
+}
+            </code></pre> 
+    </div>
+
+    <br><br>
+    <hr>
+
+    <h1>Acknowledgements</h1>
+    <p style="width: 80%;">
+        This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful project</a>, and inherits the modifications made by <a href="https://github.com/jasonyzhang/webpage-template">Jason Zhang</a>.
+        The code can be found <a href="https://github.com/elliottwu/webpage-template">here</a>.
+    </p>
+
+    <br><br>
+</div>
+
+</body>
+
+</html>
